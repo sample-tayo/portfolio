@@ -10,14 +10,14 @@
 /* Setting the background color of the page. */
 body {
     font-family: 'Poppins';
-    background-color: hsl(216, 12%, 8%);
+    background-color: black;
     color: white;
 }
 
 /* Setting the background color of the page. */
 .background{
     position: absolute;
-    background-color: hsl(216, 12%, 8%);
+    background-color: black;
     height: 100%;
     width: 100%;
     font-family: 'Poppings';
