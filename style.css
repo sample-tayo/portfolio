@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+/* Setting the box-sizing to border-box, and setting the margin and padding to 0. */
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting the background color of the page. */
+body {
+    font-family: 'Poppins';
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+}
+
+/* Setting the background color of the page. */
+.background{
+    position: absolute;
+    background-color: hsl(216, 12%, 8%);
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppings';
+}
+
+.flex-bg {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* this is styling for first box */
+.flex-first {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sampletayo {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF003D;
+}
+
+.second-text {
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.designer-text {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Styling the text "from" in the first box. */
+.from-text {
+    font-family: 'Poppins';
+   font-size: 15px;
+    font-weight: 600;
+} 
+
+/* Styling the text "in" in the first box. */
+.in-text {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: #FF2B51;
+}
+
+/* this is styling for center box */
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+/* Styling the circle. */
+.circle {
+    width: 350px;
+    height: 350px;
+    background: transparent;
+    border: 15px solid #E40037;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #E40037, inset 0 0 20px #E40037;
+    animation: pulse 5s linear 3s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow:0 0 20px #E40037, inset 0 0 20px #E40037; }
+    50% { box-shadow:0 0 40px #E40037, inset 0 0 40px #E40037; }
+    100% { box-shadow:0 0 20px #E40037, inset 0 0 20px #E40037; }
+  }
+
+.circle {
+    top:50%;
+    left:50%;
+    margin-top: 25%;  
+    margin-left: 25%;
+}
+
+/* Centering the image. */
+.image-circle{
+    top:50%;
+    left:50%;
+    margin-top: 25%;  
+    margin-left: -15%;
+    border: none;
+}
+
+img {
+    /* position: absolute; */
+    width: 400px;
+    height: 400px;
+}
+/* this is styling for last box */
+
+.flex-last {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.full-name {
+    text-align: right;
+    margin-right: 100px;
+    color: #FF2B51;
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.bolaji {
+    font-weight: 400;
+}
+
+.makinde {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    margin-right: 100px;
+    writing-mode: vertical-rl;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+li {
+    display: block;
+    float: left;
+    padding-bottom: 35px;
+}
+
+
+.flex-icon {
+    min-height: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: auto;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .icon-3d {
+    padding: 10px;
+    animation: icon3d 200ms 10;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  .icon-3d:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+  }
+  
+  @keyframes icon3d {
+    0% {
+      text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+    }
+    25% {
+      text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+    }
+    50% {
+      text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+    }
+    75% {
+      text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+    }
+    100% {
+      text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+    }
+  }
+  @media (min-width:701px) {
+    .image-circle-appear {
+        display: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .background {
+        position: relative;
+    }
+
+    .flex-bg {
+        flex-direction: column;
+    }
+
+    .second-text {
+        text-align: center;
+        margin: 0;
+    }
+
+    .flex-first, .flex-center, .flex-last {
+        justify-content: center;
+        align-items: center;
+    }
+    .circle{
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+        background-image: url(Assets/hello-002.jpg);
+    }
+
+    .image-circle {
+        display: none;
+    }
+
+    .full-name {
+        display: none;
+    }
+
+    .flex-last {
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .menu {
+        writing-mode: horizontal-tb;
+    }
+
+    li {
+        display: block;
+        float: left;
+        padding-right: 20px;
+    }
+
+    .menu, .flex-icon {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sampletayo, .designer-text, .from-text, .circle {
+        margin-left: 0;
+    }
+}
